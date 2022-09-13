@@ -165,17 +165,36 @@ img {
   border-radius: 1rem;
   background-color: rgb(223, 213, 203);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.6s ease-in-out;
+  position: relative;
 }
 
 .product img {
-  object-fit: fill;
   border-radius: 10px;
   transition: all 0.6s ease-in-out;
 }
+
 .product:hover img {
   border: 2px solid rgba(30, 182, 22, 0.595);
   transform: scale(0.9) translateY(10px);
 }
+.product:hover {
+  background-color: rgb(62, 62, 77);
+}
+.product h3 {
+  transition: all 2s ease-in-out;
+}
+
+.product:hover h3 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  color: rgb(181, 37, 37);
+  transform: scale(3);
+}
+/* .product:hover h3{
+
+} */
 @media screen and (max-width: 480px) {
   .filters-container {
     flex-direction: column;
