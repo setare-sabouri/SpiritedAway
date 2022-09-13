@@ -1,5 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
 :root {
-  --setare: #444;
+  --pallete0: #a09c79;
+  --pallete1: #9d002b;
+  --pallete2: #437155;
+  --pallete3: #cea19b;
+  --pallete4: #3c2f29;
+  --pallete5: #c76862;
 }
 * {
   box-sizing: border-box;
@@ -7,12 +15,9 @@
   margin: 0;
 }
 body {
-  font-family: "Fredericka the Great", cursive;
+  font-family: "IM Fell Great Primer", "Fredericka the Great", cursive;
 }
-html {
-  font-size: 16px;
-  color: white;
-}
+
 img {
   max-width: 100%;
   display: block;
@@ -21,10 +26,6 @@ img {
   width: 100vw;
   height: 100vh;
 }
-.btn {
-  background-color: var(--setare);
-}
-
 .entry-img-wrapper img {
   object-fit: unset;
   position: relative;
@@ -84,23 +85,26 @@ img {
 /* ....................NEW PAGE.................  */
 
 .flex-container {
-  background-color: rgb(219, 219, 219);
+  background-color: var(--pallete0);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: center;
 }
 .shopping-header {
-  background-color: rgba(80, 104, 104, 0.267);
-  padding: 1rem;
-  text-align: center;
   display: flex;
-  border-bottom: 0.2rem solid black;
+  border-bottom: 0.1rem solid black;
+  width: 90%;
+  align-items: center;
 }
-.shopping-header h1 {
+.shopping-header a {
+  text-decoration: none;
   width: 50%;
   color: black;
+  font-family: "Playball", cursive;
+  font-size: 1.5rem;
 }
 .filters-container {
   display: flex;
@@ -108,15 +112,29 @@ img {
   justify-content: space-evenly;
   align-items: center;
   color: black;
+  align-items: flex-end;
 }
 .filter {
   display: flex;
   flex-direction: row;
+  padding: 0.3rem;
 }
+.filter label {
+  padding: 0.3rem;
+}
+.filter select {
+  background-color: var(--pallete2);
+  border-radius: 1rem;
+  padding: 0.3rem;
+  color: white;
+}
+
 .shopping-main-container {
-  width: 100%;
+  width: 90%;
+  margin: 1rem 0;
 }
 .shopping-sidebar {
+  z-index: 1;
   background-color: rgba(168, 168, 219, 0.812);
   position: fixed;
   left: 0;
@@ -136,10 +154,6 @@ img {
 }
 
 /*products */
-
-.shopping-main-container {
-  margin: 1rem 0;
-}
 .products-container {
   display: flex;
   flex-direction: row;
@@ -163,34 +177,39 @@ img {
   align-items: center;
   color: black;
   border-radius: 1rem;
-  background-color: rgb(223, 213, 203);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: all 0.6s ease-in-out;
   position: relative;
 }
 
 .product img {
-  border-radius: 10px;
+  border-radius: 1rem;
   transition: all 0.6s ease-in-out;
 }
 
 .product:hover img {
-  border: 2px solid rgba(30, 182, 22, 0.595);
-  transform: scale(0.9) translateY(10px);
+  transform: scale(1.2) translateY(10px);
+  z-index: 3;
 }
 .product:hover {
-  background-color: rgb(62, 62, 77);
+  background-color: var(--pallete0);
 }
 .product h3 {
-  transition: all 2s ease-in-out;
+  transition: all 3s ease-in-out;
+  position: absolute;
+  background-color: #9d002a7a;
+  color: white;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  z-index: 3;
 }
-
 .product:hover h3 {
   position: absolute;
-  top: 20%;
-  left: 50%;
-  color: rgb(181, 37, 37);
-  transform: scale(3);
+  color: rgb(225, 218, 218);
+  background-color: #9d002acb;
+  transform: scale(0.7);
 }
 /* .product:hover h3{
 
@@ -213,3 +232,5 @@ img {
     width: 33.33%;
   }
 }
+
+/* 13 sep */
