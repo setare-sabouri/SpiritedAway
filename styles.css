@@ -25,6 +25,7 @@ img {
 .entry-header {
   width: 100vw;
   height: 100vh;
+  color: white;
 }
 .entry-img-wrapper img {
   object-fit: unset;
@@ -49,7 +50,7 @@ img {
 }
 
 .menue li:hover {
-  color: rgb(247, 90, 90);
+  color: var(--pallete3);
   font-size: 1.5rem;
 }
 
@@ -61,7 +62,7 @@ img {
   transform: translate(-50%, -50%);
 }
 .entry-header h1:hover {
-  color: brown;
+  color: var(--pallete1);
 }
 .explore-btn {
   position: absolute;
@@ -78,7 +79,7 @@ img {
   font-size: 1rem;
 }
 .explore-btn:hover {
-  background-color: yellowgreen;
+  background-color: var(--pallete5);
   color: black;
 }
 
@@ -135,12 +136,12 @@ img {
 }
 .shopping-sidebar {
   z-index: 1;
-  background-color: rgba(168, 168, 219, 0.812);
+  background-color: var(--pallete2);
   position: fixed;
   left: 0;
   top: 50%;
   border-radius: 0 20% 20% 0;
-  color: black;
+  color: white;
 }
 .sidebar-nav ul {
   padding: 0.5rem 0.2rem 0.5rem 0;
@@ -150,7 +151,7 @@ img {
   list-style: none;
 }
 .sidebar-nav ul li:hover {
-  color: rgb(214, 255, 9);
+  color: var(--pallete4);
 }
 
 /*products */
