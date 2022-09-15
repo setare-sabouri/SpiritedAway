@@ -243,6 +243,17 @@ img {
 .game-item img {
   border: 0.1rem solid var(--pallete3);
 }
+/* .......................................Noface page.......................................... */
+.Noface-container {
+  display: flex;
+  height: 100vh;
+}
+.left-img {
+  width: 50%;
+}
+.right-info {
+  width: 50%;
+}
 /* ---------------------------------Medias-----------------------------  */
 @media screen and (max-width: 480px) {
   .filters-container {
