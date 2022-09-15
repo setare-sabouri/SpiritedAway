@@ -22,13 +22,13 @@ img {
   max-width: 100%;
   display: block;
 }
+
 .entry-header {
   width: 100vw;
   height: 100vh;
   color: white;
 }
 .entry-img-wrapper img {
-  object-fit: unset;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -48,7 +48,10 @@ img {
   font-size: 1.2rem;
   padding: 1rem;
 }
-
+.menue a {
+  color: var(--pallete3);
+  text-decoration: none;
+}
 .menue li:hover {
   color: var(--pallete3);
   font-size: 1.5rem;
@@ -212,12 +215,41 @@ img {
   background-color: #9d002acb;
   transform: scale(0.7);
 }
-/* .product:hover h3{
-
-} */
+/* ---------------------------------Game page------------------------ */
+.select-game-container {
+  background-color: var(--pallete1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.select-game-container h1 {
+  color: var(--pallete3);
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+.Game-options {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.game-item {
+  width: 25%;
+  list-style: none;
+  padding: 1rem;
+}
+.game-item img {
+  border: 0.1rem solid var(--pallete3);
+}
+/* ---------------------------------Medias-----------------------------  */
 @media screen and (max-width: 480px) {
   .filters-container {
     flex-direction: column;
+  }
+  .game-item {
+    width: 50%;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
