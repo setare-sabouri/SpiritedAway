@@ -3,6 +3,13 @@ const gameBtn=document.getElementById("gameBtn");
 const gameContainer=document.getElementById("game-container");
 const gameContent=document.querySelector('.game-content');
 var MyChar={};
+//---------------------index.html-----------------------
+// function moveCursor(e) {
+//     let cursor = document.getElementById('mycursor');
+//     cursor.style.top =  e.pageY + "px";
+//     cursor.style.left = e.pageX + "px";
+// } 
+// window.addEventListener('mousemove', moveCursor);
 //----------------------game.html Js-------------------------
 
 for (let i = 0; i < gameItem.length; i++) {

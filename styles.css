@@ -10,6 +10,8 @@
   --pallete5: #c76862;
 }
 * {
+  cursor: url("https://assets.codepen.io/4261339/internal/avatars/users/default.png?fit=crop&format=auto&height=80&version=1610012063&width=80"),
+    pointer;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -22,7 +24,16 @@ img {
   max-width: 100%;
   display: block;
 }
-
+/* .mycursor {
+  background-image: url(images/cursor.png);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+} */
 .entry-header {
   width: 100vw;
   height: 100vh;
@@ -304,10 +315,10 @@ img {
   width: 100vw;
   height: 100vh;
 }
-.video-bg video {
+/* .video-bg video {
   position: relative;
   z-index: -1;
-}
+} */
 .left-form {
   position: absolute;
   top: 50%;
