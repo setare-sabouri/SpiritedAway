@@ -63,6 +63,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: all 1s;
 }
 .entry-header h1:hover {
   color: var(--pallete1);
@@ -80,6 +81,7 @@ img {
   border: 0.01rem solid white;
   border-radius: 0.6rem;
   font-size: 1rem;
+  transition: all 2s;
 }
 .explore-btn:hover {
   background-color: var(--pallete5);
@@ -215,7 +217,8 @@ img {
   background-color: #9d002acb;
   transform: scale(0.7);
 }
-/* ---------------------------------Game page------------------------ */
+
+/* ---------------------------------Game.html------------------------ */
 .select-game-container {
   background-color: var(--pallete1);
   height: 100vh;
@@ -244,7 +247,7 @@ img {
 .game-item img {
   border: 0.1rem solid var(--pallete3);
 }
-#game-btn {
+#gameBtn {
   background-color: var(--pallete3);
   padding: 1rem;
   width: 20%;
@@ -252,15 +255,38 @@ img {
   transition: all 1s;
   animation: colorAnimation 2s infinite;
 }
-#game-btn:hover {
+#gameBtn:hover {
   background-color: #4dc57b;
   border-radius: 100%;
   width: 10%;
 }
-#game-btn button {
+#gameBtn button {
   background-color: transparent;
   border: none;
 }
+
+/* ---------------------------------GamePage.html------------------------ */
+.game-container {
+  background-color: var(--pallete4);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Timer {
+  width: 50%;
+}
+.Score {
+  width: 50%;
+}
+.game-content {
+  width: 100%;
+  height: 100%;
+  background-color: #437155;
+}
+/* ---------------------------------Keyframes------------------------ */
 
 @keyframes colorAnimation {
   0% {
@@ -271,16 +297,14 @@ img {
   }
   100% {
     background-color: #a38e95;
-    transform: rotate(45deg);
   }
 }
-/* .......................................Noface page.......................................... */
+/* .......................................Noface.html.......................................... */
 .Noface-container {
+  width: 100vw;
   height: 100vh;
 }
 .video-bg video {
-  width: 100%;
-  position: fixed;
   position: relative;
   z-index: -1;
 }
@@ -288,14 +312,15 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100vw;
   transform: translate(-50%, -50%);
-  width: 50%;
-  height: 50%;
 }
 .left-form form {
   display: flex;
   align-items: center;
   height: 100%;
+  width: 80%;
+  margin: auto;
   padding: 2rem;
   flex-direction: column;
   background-color: #cea19b68;
@@ -307,22 +332,37 @@ img {
   transition: all 0.2s ease-in-out;
   justify-content: center;
 }
-.left-form form p {
-  margin-bottom: 1rem;
+.left-form form h1 {
+  margin-bottom: 2rem;
+  color: var(--pallete4);
 }
 .left-form form input {
   border-radius: 0.5rem;
-  background: transparent;
-  padding: 0.5rem;
+  background: #fff2f24a;
+  padding: 1rem;
+  width: 90%;
   margin-bottom: 0.5rem;
-  border: none;
-  border: 0.1rem solid var(--pallete3);
+  border: 0.1rem solid #a76e6a;
 }
 .left-form form a {
   text-decoration: none;
   font-size: 0.8rem;
 }
-
+.left-form form button {
+  background-color: #fff2f24a;
+  padding: 0.5rem 2rem;
+  width: 60%;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #a76e6a;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: var(--pallete4);
+  transition: all 1s;
+}
+.left-form form button:hover {
+  background-color: #35ee7c7a;
+}
 /* ---------------------------------Medias-----------------------------  */
 @media screen and (max-width: 480px) {
   .filters-container {

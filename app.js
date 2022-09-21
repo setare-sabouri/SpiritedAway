@@ -1,39 +1,41 @@
 const gameItem=document.querySelectorAll(".game-item");
-const gameBtn=document.getElementById("game-btn");
+const gameBtn=document.getElementById("gameBtn");
 const gameContainer=document.getElementById("game-container");
-
+const gameContent=document.querySelector('.game-content');
+var MyChar={};
 //----------------------game.html Js-------------------------
 
 for (let i = 0; i < gameItem.length; i++) {
     gameItem[i].addEventListener('click',function () {
-        alert("YOu are selecting"+" item "+ (i+1) );
-        const img = gameItem[i].querySelector('img');
-        const src = img.getAttribute('src');
-        const alt = img.getAttribute('alt');
-        console.log(alt);
-        console.log(src);
+        const imgTaken = gameItem[i].querySelector('img');
+        MyChar.src=imgTaken.getAttribute('src');
+        MyChar.alt=imgTaken.getAttribute('alt');
      }); 
 }
 
 //--------------------GamePage.html Js--------------------
-function createCharacter() {
-    const NeweChar=document.createElement('div');
-    NeweChar.innerHTML="i am noface";
-    gameContainer.appendChild(NeweChar);
-    console.log('here you areeee');
+
+function createCharacter(MyChar) {
+    var NewChar=document.createElement('img');
+    NewChar.innerHTML="i was added";
+    console.log(MyChar.src);
 }
 function startGame(){
     createCharacter();
 }
 function playgame() {
-    startGame();
-
+    console.log('hhhhh');
+    gameContent.innerHTML='dddddddddddddddddddddddd';
+}
+if (gameBtn) {
+    gameBtn.addEventListener('click', function () {
+        window.location="GamePage.html";
+    })
 }
 
-
-
-const SelectBtn=document.getElementById("Select-btn");
-SelectBtn.addEventListener('click',function (params) {
-    SelectBtn.style.backgroundColor='Green';
-});
- playgame();
+//------------------noface page--------------------------------
+var SignUpBtn=document.getElementById("signUpBtn");
+function animate(params) {
+    alert("dddddddddddd");
+}
+SignUpBtn.addEventListener('click',animate)
