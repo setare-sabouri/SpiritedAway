@@ -222,6 +222,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .select-game-container h1 {
   color: var(--pallete3);
@@ -243,17 +244,85 @@ img {
 .game-item img {
   border: 0.1rem solid var(--pallete3);
 }
+#game-btn {
+  background-color: var(--pallete3);
+  padding: 1rem;
+  width: 20%;
+  text-align: center;
+  transition: all 1s;
+  animation: colorAnimation 2s infinite;
+}
+#game-btn:hover {
+  background-color: #4dc57b;
+  border-radius: 100%;
+  width: 10%;
+}
+#game-btn button {
+  background-color: transparent;
+  border: none;
+}
+
+@keyframes colorAnimation {
+  0% {
+    background-color: #9d002b;
+  }
+  50% {
+    background-color: #c1526f;
+  }
+  100% {
+    background-color: #a38e95;
+    transform: rotate(45deg);
+  }
+}
 /* .......................................Noface page.......................................... */
 .Noface-container {
-  display: flex;
   height: 100vh;
 }
-.left-img {
-  width: 50%;
+.video-bg video {
+  width: 100%;
+  position: fixed;
+  position: relative;
+  z-index: -1;
 }
-.right-info {
+.left-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 50%;
+  height: 50%;
 }
+.left-form form {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+  flex-direction: column;
+  background-color: #cea19b68;
+  border-radius: 1.5rem;
+  backdrop-filter: blur(0.1rem);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: all 0.2s ease-in-out;
+  justify-content: center;
+}
+.left-form form p {
+  margin-bottom: 1rem;
+}
+.left-form form input {
+  border-radius: 0.5rem;
+  background: transparent;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border: 0.1rem solid var(--pallete3);
+}
+.left-form form a {
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
 /* ---------------------------------Medias-----------------------------  */
 @media screen and (max-width: 480px) {
   .filters-container {
@@ -267,6 +336,9 @@ img {
   .colummn {
     width: 50%;
   }
+  .right-image {
+    display: inline;
+  }
 }
 @media screen and (min-width: 768px) {
   .entry-header h1 {
@@ -275,6 +347,14 @@ img {
   .colummn {
     width: 33.33%;
   }
+  .right-image {
+    display: inline;
+  }
 }
 
-/* 13 sep */
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
