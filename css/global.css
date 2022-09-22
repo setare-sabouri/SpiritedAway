@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+:root {
+  --pallete0: #a09c79;
+  --pallete1: #9d002b;
+  --pallete2: #437155;
+  --pallete3: #cea19b;
+  --pallete4: #3c2f29;
+  --pallete5: #c76862;
+}
+* {
+  cursor: url("https://assets.codepen.io/4261339/internal/avatars/users/default.png?fit=crop&format=auto&height=80&version=1610012063&width=80"),
+    pointer;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "IM Fell Great Primer", "Fredericka the Great", cursive;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* .mycursor {
+  background-image: url(images/cursor.png);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+} */

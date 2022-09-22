@@ -5,16 +5,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catch</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>main game</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/maingame.css">
+    <link rel="stylesheet" href="../css/media-query.css">
   </head>
   <body>
-    <main id="game-container" class="game-container">
+    <main id="game-container" onload="playgame()" class="game-container">
       <h4 class="Timer">Timer: 00:00</h4>
       <h3 class="Score">Score : 0</h3>
       <div class="game-content"></div>
     </main>
-    <script src="app.js"></script>
+    <script src="../js/main-game.js"></script>
   </div>
   </body>
 </html>

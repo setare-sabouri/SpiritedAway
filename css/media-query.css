@@ -1,0 +1,48 @@
+@media screen and (max-width: 480px) {
+  .filters-container {
+    flex-direction: column;
+  }
+  .game-item {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .colummn {
+    width: 50%;
+  }
+  .right-image {
+    display: inline;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entry-header h1 {
+    font-size: 3rem;
+  }
+  .colummn {
+    width: 33.33%;
+  }
+  .right-image {
+    display: inline;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ................................................................................ */
+
+@keyframes colorAnimation {
+  0% {
+    background-color: #9d002b;
+  }
+  50% {
+    background-color: #c1526f;
+  }
+  100% {
+    background-color: #a38e95;
+  }
+}

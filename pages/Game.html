@@ -5,8 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/media-query.css">
+    <title>Game</title>
   </head>
   <body>
     <div class="mycursor" id="mycursor"></div>
@@ -14,23 +16,23 @@
       <h1>Choose your favorite character</h1>
       <ul class="Game-options">
         <li class="game-item">
-          <img src="Game-images/noface-gif.gif" alt="noface1" />
+          <img src="../assets/game-images/noface.gif" alt="noface1" />
         </li>
         <li class="game-item">
-          <img src="Game-images/noface-gif.gif" alt="noface2" />
+          <img src="../assets/game-images/noface.gif" alt="noface1" />
         </li>
         <li class="game-item">
-          <img src="Game-images/noface-gif.gif" alt="noface3" />
+          <img src="../assets/game-images/noface.gif" alt="noface1" />
         </li>
         <li class="game-item">
-          <img src="Game-images/noface-gif.gif" alt="noface4" />
+          <img src="../assets/game-images/noface.gif" alt="noface1" />
         </li>
       </ul>
-      <a onclick="playgame()" id="gameBtn">
-        <button>PLAY</button>
-      </a>
+
+    <button id="gameBtn" onclick="gameBtn()">PLAY</button>
+      
     </main>
-    <script src="app.js"></script>
+    <script src="../js/game.js"></script>
   </div>
   </body>
 </html>

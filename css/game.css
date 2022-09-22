@@ -1,0 +1,45 @@
+.select-game-container {
+  background-color: var(--pallete1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.select-game-container h1 {
+  color: var(--pallete3);
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+.Game-options {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.game-item {
+  width: 25%;
+  list-style: none;
+  padding: 1rem;
+}
+.game-item img {
+  border: 0.1rem solid var(--pallete3);
+}
+#gameBtn {
+  background-color: var(--pallete3);
+  padding: 1rem;
+  width: 20%;
+  text-align: center;
+  transition: all 1s;
+  animation: colorAnimation 2s infinite;
+}
+#gameBtn:hover {
+  background-color: #4dc57b;
+  border-radius: 100%;
+  width: 10%;
+}
+#gameBtn button {
+  background-color: transparent;
+  border: none;
+}

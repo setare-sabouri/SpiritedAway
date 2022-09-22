@@ -1,0 +1,127 @@
+.flex-container {
+  background-color: var(--pallete0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.shopping-header {
+  display: flex;
+  border-bottom: 0.1rem solid black;
+  width: 90%;
+  align-items: center;
+}
+.shopping-header a {
+  text-decoration: none;
+  width: 50%;
+  color: black;
+  font-family: "Playball", cursive;
+  font-size: 1.5rem;
+}
+.filters-container {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+  align-items: flex-end;
+}
+.filter {
+  display: flex;
+  flex-direction: row;
+  padding: 0.3rem;
+}
+.filter label {
+  padding: 0.3rem;
+}
+.filter select {
+  background-color: var(--pallete2);
+  border-radius: 1rem;
+  padding: 0.3rem;
+  color: white;
+}
+
+.shopping-main-container {
+  width: 90%;
+  margin: 1rem 0;
+}
+.shopping-sidebar {
+  z-index: 1;
+  background-color: var(--pallete2);
+  position: fixed;
+  left: 0;
+  top: 50%;
+  border-radius: 0 20% 20% 0;
+  color: white;
+}
+.sidebar-nav ul {
+  padding: 0.5rem 0.2rem 0.5rem 0;
+}
+.sidebar-nav ul li {
+  padding: 0.5rem 0.6rem;
+  list-style: none;
+}
+.sidebar-nav ul li:hover {
+  color: var(--pallete4);
+}
+
+/*products */
+.products-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.colummn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem; /* set equally to 33.33 then instead use padding because margin will mess that 33.33 :)) */
+}
+.product {
+  /* flex: 1 ; so that all of our flex items take equal space in the row */
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.6s ease-in-out;
+  position: relative;
+}
+
+.product img {
+  border-radius: 1rem;
+  transition: all 0.6s ease-in-out;
+}
+
+.product:hover img {
+  transform: scale(1.2) translateY(10px);
+  z-index: 3;
+}
+.product:hover {
+  background-color: var(--pallete0);
+}
+.product h3 {
+  transition: all 3s ease-in-out;
+  position: absolute;
+  background-color: #9d002a7a;
+  color: white;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  z-index: 3;
+}
+.product:hover h3 {
+  position: absolute;
+  color: rgb(225, 218, 218);
+  background-color: #9d002acb;
+  transform: scale(0.7);
+}
