@@ -1,1 +1,1 @@
-alert("you are in main game");
+console.log(MyChar);
