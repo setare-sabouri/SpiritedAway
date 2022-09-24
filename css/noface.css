@@ -1,6 +1,12 @@
 .Noface-container {
   width: 100vw;
   height: 100vh;
+  background-color: #453938;
+
+  background-image: url("https://cdn.dribbble.com/users/2084349/screenshots/8728231/media/b7a9d776c5052c9fabf2d0bfe431dfdb.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 /* .video-bg video {
     position: relative;
