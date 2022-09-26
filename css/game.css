@@ -23,6 +23,8 @@
   width: 16.66%;
   list-style: none;
   padding: 1rem;
+  text-align: center;
+  color: var(--pallete3);
   /* border: 0.1rem solid var(--pallete3); */
 }
 .game-item img {
@@ -30,7 +32,7 @@
 }
 #gameBtn {
   background-color: var(--pallete3);
-  padding: 1rem;
+  padding: 1rem 0 1rem 0;
   width: 20%;
   text-align: center;
   border-radius: 1rem;

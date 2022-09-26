@@ -27,6 +27,9 @@
   .right-image {
     display: inline;
   }
+  #gameBtn {
+    width: 20%;
+  }
 }
 
 @media (min-aspect-ratio: 16/9) {
