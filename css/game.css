@@ -17,26 +17,29 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
 }
 .game-item {
-  width: 25%;
+  width: 16.66%;
   list-style: none;
   padding: 1rem;
+  /* border: 0.1rem solid var(--pallete3); */
 }
 .game-item img {
-  border: 0.1rem solid var(--pallete3);
+  margin: auto;
 }
 #gameBtn {
   background-color: var(--pallete3);
   padding: 1rem;
   width: 20%;
   text-align: center;
+  border-radius: 1rem;
   transition: all 1s;
   animation: colorAnimation 2s infinite;
 }
 #gameBtn:hover {
-  background-color: #4dc57b;
-  border-radius: 100%;
+  background-color: var(--pallete3);
+
   width: 10%;
 }
 #gameBtn button {

@@ -13,6 +13,9 @@
   .right-image {
     display: inline;
   }
+  .game-item {
+    width: 33.33%;
+  }
 }
 @media screen and (min-width: 768px) {
   .entry-header h1 {
