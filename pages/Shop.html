@@ -15,10 +15,13 @@
     />
   </head>
   <body>
-    <div class="flex-container">
+    <!-- see what happens if you remove this -->
+    <div class="flex-shop-container">
       <header class="shopping-header">
+        <!-- is there a logo tag -->
         <a href="../index.html"><h1>SA</h1></a>
         <div class="filters-container">
+          <!-- is there a tag for filters ? section myb? -->
           <div class="filter-selection filter">
             <label for="filter">Filter by:</label>
             <select id="filter">
@@ -31,7 +34,8 @@
             <label for="sort">Sort by:</label>
             <select id="sort">
               <option value="Date">Date</option>
-              <option value="Most-view">Most view</option>
+              <option value="Most-view">View</option>
+              <option value="brand">Brand</option>
             </select>
           </div>
         </div>
@@ -45,14 +49,16 @@
             <li>
               <span class="material-symbols-outlined"> currency_bitcoin </span>
             </li>
-            <li><span class="material-symbols-outlined"> sell </span></li>
+            <li>
+              <span class="material-symbols-outlined"> sell </span>
+            </li>
           </ul>
         </nav>
       </aside>
-
-      <main class="shopping-main-container">
-        <section class="products-container">
-          <div class="colummn">
+      <main class="main-shop-container">
+        <!-- is there any wrapper semantic tag? -->
+        <div class="products-container">
+          <section class="colummn">
             <article class="product">
               <img src="../assets/shop-images/t-shirt2.jpg" alt="" />
               <h3>$90</h3>
@@ -65,8 +71,8 @@
               <img src="../assets/shop-images/earings.jpg" alt="" />
               <h3>$50</h3>
             </article>
-          </div>
-          <div class="colummn">
+          </section>
+          <section class="colummn">
             <article class="product">
               <img src="../assets/shop-images/T-shirt.jpg" alt="" />
               <h3>$150</h3>
@@ -79,8 +85,8 @@
               <img src="../assets/shop-images/T-shirt.jpg" alt="" />
               <h3>$99</h3>
             </article>
-          </div>
-          <div class="colummn">
+          </section>
+          <section class="colummn">
             <article class="product">
               <img src="../assets/shop-images/dress.jpg" alt="" />
               <h3>$90</h3>
@@ -93,8 +99,8 @@
               <img src="../assets/shop-images/t-shirt2.jpg" alt="" />
               <h3>$105</h3>
             </article>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
     </div>
   </body>

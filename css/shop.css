@@ -1,4 +1,4 @@
-.flex-container {
+.flex-shop-container {
   background-color: var(--pallete0);
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,11 +45,6 @@
   padding: 0.3rem;
   color: white;
 }
-
-.shopping-main-container {
-  width: 90%;
-  margin: 1rem 0;
-}
 .shopping-sidebar {
   z-index: 2;
   background-color: var(--pallete2);
@@ -71,6 +66,11 @@
 }
 
 /*products */
+
+.main-shop-container {
+  width: 90%;
+  margin: 1rem 0;
+}
 .products-container {
   display: flex;
   flex-direction: row;
