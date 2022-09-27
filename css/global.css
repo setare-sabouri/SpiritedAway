@@ -11,7 +11,7 @@
 }
 * {
   cursor: url("https://assets.codepen.io/4261339/internal/avatars/users/default.png?fit=crop&format=auto&height=80&version=1610012063&width=80"),
-    pointer;
+    auto;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -24,7 +24,13 @@ img {
   max-width: 100%;
   display: block;
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: lightblue;
+}
 /* .mycursor {
   background-image: url(images/cursor.png);
   width: 100px;

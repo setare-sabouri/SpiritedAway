@@ -23,13 +23,12 @@
   font-size: 1.2rem;
   padding: 1rem;
 }
-.menue-header a {
-  color: var(--pallete3);
-  text-decoration: none;
-}
-.menue-header li:hover {
+.menue-header li a {
   color: var(--pallete3);
   font-size: 1.5rem;
+}
+.menue-header li a:hover {
+  color: var(--pallete1);
 }
 
 .entry-header h1 {
