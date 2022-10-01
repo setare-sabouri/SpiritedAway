@@ -31,7 +31,7 @@
   color: var(--pallete1);
 }
 
-.entry-header h1 {
+.landing-section h1 {
   position: absolute;
   font-size: 1.8rem;
   top: 50%;
@@ -39,9 +39,14 @@
   transform: translate(-50%, -50%);
   transition: all 1s;
 }
-.entry-header h1:hover {
+.landing-section h1:hover {
   color: var(--pallete1);
 }
+/* .landing-title {
+  background-color: rgba(96, 18, 18, 0.595);
+  border-radius: 0.8rem;
+  padding: 1rem;
+} */
 .login-btn {
   position: absolute;
   display: block;
