@@ -16,6 +16,9 @@
   .game-item {
     width: 33.33%;
   }
+  .left-form {
+    width: 80%;
+  }
 }
 @media screen and (min-width: 768px) {
   .entry-header h1 {
@@ -29,6 +32,9 @@
   }
   #gameBtn {
     width: 20%;
+  }
+  .left-form {
+    width: 50%;
   }
 }
 
