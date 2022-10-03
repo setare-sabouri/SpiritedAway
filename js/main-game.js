@@ -23,8 +23,8 @@ function initialChar() {
 function LocationGenerator(input){
     var widthOfScreen=gameContent.clientWidth;
     var heightOfScreen=gameContent.clientHeight;
-    input.style.top = Math.random() * (widthOfScreen-200) + 'px';
-    input.style.left=Math.random() * (heightOfScreen-200) +'px';
+    input.style.top = Math.random() * (widthOfScreen-100) + 'px';
+    input.style.left=Math.random() * (heightOfScreen-100) +'px';
     return input;
     // const y = Math.random() * height;
 }

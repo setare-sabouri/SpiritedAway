@@ -10,7 +10,7 @@
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  filter: brightness(30%);
+  filter: brightness(80%);
 }
 .left-form {
   position: absolute;
@@ -27,13 +27,14 @@
   margin: auto;
   padding: 2rem;
   flex-direction: column;
-  background-color: #29252542;
+  background-color: #352d2d94;
   border-radius: 1.5rem;
-  backdrop-filter: blur(0.1rem);
+  backdrop-filter: blur(1rem);
   transition: all 0.2s ease-in-out;
-  box-shadow: rgb(46 108 143 / 23%) 0px 54px 55px,
-    rgb(98 100 107 / 70%) 0px -12px 30px, rgb(115 116 120 / 16%) 0px 4px 6px,
-    rgb(0 0 0 / 17%) 0px 12px 13px, rgb(139 172 183 / 9%) 0px -3px 5px;
+  box-shadow: rgba(202, 207, 210, 0.23) 0px 54px 55px,
+    rgb(98 100 107 / 70%) 0px -12px 30px, rgba(213, 216, 229, 0.5) 0px 4px 6px,
+    rgba(121, 106, 106, 0.7) 0px 12px 13px,
+    rgba(103, 146, 160, 0.5) 0px -3px 5px;
 }
 .left-form form h1 {
   margin: 2rem 0;
@@ -46,6 +47,9 @@
   flex-direction: column;
   width: 60%;
 }
+.input-wrapper-1 label {
+  cursor: pointer;
+}
 .input-wrapper-2 {
   display: flex;
   flex-wrap: wrap;
@@ -54,38 +58,34 @@
 }
 .input-wrapper-2 label {
   width: 50%;
+  cursor: pointer;
 }
 .input-wrapper-2 a {
   width: 50%;
   text-align: end;
-  width: 50%;
   text-decoration: none;
   font-size: 0.8rem;
   color: rgb(16 189 255);
+  cursor: pointer;
+}
+.input-wrapper-2 input {
+  width: 100%;
 }
 .left-form form input {
   border-radius: 0.8rem;
   background: #d4c5c57a;
   padding: 1rem 0.5rem;
-  width: 100%;
   margin: 0.5rem 0;
   border: 0.2rem inset #c8bcbc;
+  cursor: pointer;
 }
-::placeholder {
-  color: black;
-}
-.left-form form button {
+.submit-btn:default {
   background: #43ff437a;
   font-family: cursive;
-  padding: 0.5rem 2rem;
   width: 60%;
-  font-size: 1.5rem;
-  border-radius: 0.8rem;
-  border: 0.2rem inset #c8bcbc;
-  padding: 1rem 0.5rem;
   color: white;
   transition: all 1s;
 }
-.left-form form button:hover {
-  background-color: #35ee7c7a;
+.submit-btn:hover {
+  background-color: #6cebff7a;
 }

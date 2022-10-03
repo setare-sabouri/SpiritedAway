@@ -5,6 +5,9 @@
   .game-item {
     width: 50%;
   }
+  .game-item img {
+    width: inherit;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .colummn {
@@ -49,12 +52,12 @@
 
 @keyframes colorAnimation {
   0% {
-    background-color: #9d002b;
+    background-color: #b2a9ab;
   }
   50% {
-    background-color: #c1526f;
+    background-color: #9f4e64;
   }
   100% {
-    background-color: #a38e95;
+    background-color: #9d0739;
   }
 }
