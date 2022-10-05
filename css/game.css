@@ -26,7 +26,10 @@
   padding: 1rem;
   text-align: center;
   color: var(--pallete3);
-  /* border: 0.1rem solid var(--pallete3); */
+  transition: tranform 2s;
+}
+.game-item-selected {
+  transform: rotate(0.5turn);
 }
 .game-item img {
   margin: auto;
