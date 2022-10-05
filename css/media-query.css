@@ -6,7 +6,7 @@
     width: 50%;
   }
   .game-item img {
-    width: inherit;
+    width: 45%;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -34,7 +34,7 @@
     display: inline;
   }
   #gameBtn {
-    width: 20%;
+    width: 10%;
   }
   .left-form {
     width: 50%;
@@ -52,12 +52,18 @@
 
 @keyframes colorAnimation {
   0% {
-    background-color: #b2a9ab;
+    color: #b2a9ab;
+  }
+  25% {
+    color: #9f4e64;
   }
   50% {
-    background-color: #9f4e64;
+    color: #fd0e5e;
+  }
+  75% {
+    color: #9f4e64;
   }
   100% {
-    background-color: #9d0739;
+    color: #b2a9ab;
   }
 }

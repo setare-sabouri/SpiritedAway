@@ -7,6 +7,7 @@ for (let i = 0; i < gameItem.length; i++) {
         MyChar.src=imgTaken.getAttribute('src');
         MyChar.alt=imgTaken.getAttribute('alt');
         console.dir(MyChar);
+        alert("you have chosen"+MyChar.alt);
         const myCharstring = JSON.stringify(MyChar);
         localStorage.setItem('MyCharPassed', myCharstring);
     }); 

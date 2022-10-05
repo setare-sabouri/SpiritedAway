@@ -21,10 +21,12 @@ function initialChar() {
     })
 }
 function LocationGenerator(input){
-    var widthOfScreen=gameContent.clientWidth;
-    var heightOfScreen=gameContent.clientHeight;
-    input.style.top = Math.random() * (widthOfScreen-100) + 'px';
-    input.style.left=Math.random() * (heightOfScreen-100) +'px';
+    var widthOfScreen=gameContent.offsetWidth;
+    var heightOfScreen=gameContent.offsetHeight;
+    console.log(widthOfScreen);
+    console.log(heightOfScreen);
+    input.style.top = Math.random() * (heightOfScreen)-200 +'px';
+    input.style.left=Math.random() * (widthOfScreen)-200 + 'px';
     return input;
     // const y = Math.random() * height;
 }
