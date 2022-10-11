@@ -5,7 +5,7 @@ var Score=document.getElementById("Score");
 
 const myCharTaken = localStorage.getItem('MyCharPassed');
 const GameChar = JSON.parse(myCharTaken);
-var scoreCounter=2;
+let scoreCounter=2;
 function initialChar() {
     var NewChar=document.createElement('img');
     NewChar.src=GameChar.src;
@@ -21,8 +21,8 @@ function initialChar() {
     })
 }
 function LocationGenerator(input){
-    var widthOfScreen=gameContent.offsetWidth;
-    var heightOfScreen=gameContent.offsetHeight;
+    let widthOfScreen=gameContent.offsetWidth;
+    let heightOfScreen=gameContent.offsetHeight;
     console.log(widthOfScreen);
     console.log(heightOfScreen);
     input.style.top = Math.random() * (heightOfScreen)-200 +'px';
