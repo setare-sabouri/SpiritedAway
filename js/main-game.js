@@ -36,3 +36,5 @@ function startGame(){
 }
 
 startGame();
+
+//use getBoundingClientRect() to get game container bounds
